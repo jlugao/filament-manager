@@ -1,0 +1,36 @@
+<!-- django template -->
+<html>
+
+<head>
+    <title>Label Page</title>
+</head>
+
+<body>
+    <div class="label_grid">
+        {% with ''|center:offset as range %}
+        {% for _ in range %}
+        <div class="label"></div>
+        {% endfor %}
+        {% endwith %}
+        {% for label in filaments %}
+        <div class="label">
+            <div class="label_content">
+                <div class="label_name">{{ label.name|truncatechars:17 }}</div>
+                <div class="bottom">
+                    <div class="text">
+                        <div class="label_material">{{ label.material }}</div>
+                        <div class="label_brand">{{ label.brand }}</div>
+                        <div class="lable_price">{{ label.price_in_reais }}</div>
+                    </div>
+                    <div class="qr">
+                        <img src="{{ label.qr_code_for_permanent_url }}" alt="QR Code" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

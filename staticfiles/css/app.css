@@ -1,0 +1,76 @@
+@page {
+    page-size: A4;
+    margin-top: 1.07cm;
+    margin-bottom: 1.07cm;
+    margin-left: 4mm;
+    margin-right: 1.7mm;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.label_grid {
+    color: #2A3239;
+    font-size: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.label {
+    height: 2.12cm;
+    width: 3.82cm;
+    margin: 0;
+    border-radius: 3.5mm;
+    margin-right: 2.3mm;
+}
+
+.label_content {
+    margin: 2mm;
+}
+
+.bottom {
+
+    display: flex;
+    flex-flow: row truncate;
+}
+
+.label_material {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 1mm;
+    margin-top: 1mm;
+}
+
+.label_name {
+    font-size: 12px;
+    margin-bottom: 0.5mm;
+}
+
+.text {
+    width: 2.15;
+    word-break: break-all;
+}
+
+.qr {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-bottom: 2mm;
+}
+
+.qr>img {
+    display: block;
+    align-self: flex-end;
+    justify-self: end;
+    width: 1.4cm;
+    height: 1.4cm;
+    margin: 0;
+    margin-left: auto;
+}
